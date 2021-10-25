@@ -17,7 +17,8 @@ function AppRouter() {
                 <Route exact path='/tech' component={Tech} />
                 <Route exact path='/projects' component={Projects} />
                 <Route exact path='/contact' component={Contact} />
-                <Route component={NotFound} />
+
+       
                 <Redirect to="/" />
             </Switch>
         
