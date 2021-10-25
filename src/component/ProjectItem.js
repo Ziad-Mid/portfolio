@@ -18,8 +18,6 @@ function ProjectItem({
   description,
   language,
   url,
-  stargazers_count,
-  forks_count,
 }) {
   return (
     <Box

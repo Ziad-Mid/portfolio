@@ -13,14 +13,16 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import ProjectItem from "./ProjectItem";
+import LoadingCard from "./LoadingCard";
 
 function Projects() {
   const [repos, setRepos] = useState([]);
-  
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios.get(`https://api.github.com/users/Ziad-Mid/repos`).then((res) => {
       setRepos(res.data);
+      setLoading(false);
     });
   }, []);
 
@@ -28,8 +30,7 @@ function Projects() {
     <Box>
       <VStack spacing={3}>
         <VStack>
-          <Heading  bgClip="text"
-              bgGradient="linear(to-l, gray.300, blue.300)">
+          <Heading bgClip="text" bgGradient="linear(to-l, gray.300, blue.300)">
             <Link color={useColorModeValue("blue.500", "blue.300")}>P</Link>
             rojects
           </Heading>
@@ -50,23 +51,26 @@ function Projects() {
             align="center"
             w="100%"
           >
-            <TabPanels minHeight={"45vh"}>
+            <TabPanels minHeight={"50vh"}>
               <TabPanel px={0}>
-                <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
-                  {repos
-                    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-                    .slice(1, 11)
-                    .map((rep, i) => (
-                      <ProjectItem
-                        title={rep.name}
-                        description={rep.description}
-                        language={rep.language}
-                        url={rep.svn_url}
-                        stargazers_count={rep.stargazers_count}
-                        forks_count={rep.forks_count}
-                      />
-                    ))}
-                </SimpleGrid>
+                {loading ? (
+                  <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
+                    <LoadingCard />
+                  </SimpleGrid>
+                ) : (
+                  <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
+                    {repos
+                      .slice(1, 11)
+                      .map((rep, i) => (
+                        <ProjectItem
+                          title={rep.name}
+                          description={rep.description}
+                          language={rep.language}
+                          url={rep.svn_url}
+                        />
+                      ))}
+                  </SimpleGrid>
+                )}{" "}
               </TabPanel>
             </TabPanels>
           </Tabs>
