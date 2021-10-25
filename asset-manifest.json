@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.e2b2b7cd.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e2b2b7cd.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.3449d466.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.3449d466.js.map",
+    "static/js/2.ec5077f3.chunk.js": "/portfolio/static/js/2.ec5077f3.chunk.js",
+    "static/js/2.ec5077f3.chunk.js.map": "/portfolio/static/js/2.ec5077f3.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/js/2.ec5077f3.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ec5077f3.chunk.js.LICENSE.txt",
+    "static/media/CV_EL_MIDAOUI_ZIAD.d713a685.pdf": "/portfolio/static/media/CV_EL_MIDAOUI_ZIAD.d713a685.pdf",
+    "static/media/ENSA.84fd3778.png": "/portfolio/static/media/ENSA.84fd3778.png",
+    "static/media/logo.6ce24c58.svg": "/portfolio/static/media/logo.6ce24c58.svg",
+    "static/media/ziad.d3e476f8.png": "/portfolio/static/media/ziad.d3e476f8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3449d466.js",
+    "static/js/2.ec5077f3.chunk.js",
+    "static/js/main.e2b2b7cd.chunk.js"
+  ]
+}
