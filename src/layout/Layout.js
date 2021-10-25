@@ -3,7 +3,7 @@ import { Box } from "@chakra-ui/layout";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import AppRouter from "../component/AppRouter";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 function Layout() {
   return (
