@@ -11,18 +11,19 @@ import {
   useDisclosure,
   Collapse,
 } from "@chakra-ui/react";
-import { IoChevronDownCircleOutline,IoChevronDownCircleSharp } from "react-icons/io5";
-
-
+import {
+  IoChevronDownCircleOutline,
+  IoChevronDownCircleSharp,
+} from "react-icons/io5";
 
 function Card({ title, role, period, skills, description }) {
-const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onToggle } = useDisclosure();
   return (
     <Box
       px={4}
       py={5}
       borderWidth="1px"
-      borderColor='blue.200'
+      borderColor="blue.200"
       _hover={{ shadow: "lg" }}
       bg={useColorModeValue("white", "gray.700")}
       position="relative"
@@ -34,7 +35,7 @@ const { isOpen, onToggle } = useDisclosure();
             <Heading align="left" fontSize={15}>
               {title}
             </Heading>
-            <Text  color={"gray.400"} fontSize={12} align='left'>
+            <Text color={"gray.400"} fontSize={12} align="left">
               {period}
             </Text>
             <Text as="i" align="left" fontSize="sm">
@@ -44,12 +45,11 @@ const { isOpen, onToggle } = useDisclosure();
               spacing={1}
               mt={3}
               isInline
-              
               alignItems="center"
               display={["none", "none", "flex", "flex"]}
             >
               {skills.map((skill) => (
-                <Tag size="sm" padding="1" key={skill} >
+                <Tag size="sm" padding="1" key={skill}>
                   {skill}
                 </Tag>
               ))}
@@ -63,7 +63,11 @@ const { isOpen, onToggle } = useDisclosure();
             cursor="pointer"
             onClick={onToggle}
           >
-          {isOpen? <IoChevronDownCircleSharp/> : <IoChevronDownCircleOutline /> }  
+            {isOpen ? (
+              <IoChevronDownCircleSharp />
+            ) : (
+              <IoChevronDownCircleOutline />
+            )}
           </Text>
         </Stack>
       </Flex>
@@ -80,15 +84,11 @@ const { isOpen, onToggle } = useDisclosure();
           </Tag>
         ))}
       </Stack>
-     <Collapse in={isOpen} animateOpacity>
-      <Text
-        p={3}
-        align="left"
-        fontSize="sm"
-        
-      >
-        {description}
-      </Text></Collapse>
+      <Collapse in={isOpen} animateOpacity>
+        <Text p={3} align="left" fontSize="sm">
+          {description}
+        </Text>
+      </Collapse>
     </Box>
   );
 }

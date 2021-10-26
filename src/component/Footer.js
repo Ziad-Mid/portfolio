@@ -46,8 +46,8 @@ function Footer() {
               aria-label={s.name}
               colorScheme={s.type}
               icon={s.icon}
-              variant={'ghost'}
-              size={'lg'}
+              variant={"ghost"}
+              size={"lg"}
               isRound={true}
             />
           ))}

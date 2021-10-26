@@ -11,14 +11,9 @@ import {
   HStack,
   Link,
 } from "@chakra-ui/react";
-import { FaGithubAlt ,FaStar } from "react-icons/fa";
+import { FaGithubAlt, FaStar } from "react-icons/fa";
 
-function ProjectItem({
-  title,
-  description,
-  language,
-  url,
-}) {
+function ProjectItem({ title, description, language, url }) {
   return (
     <Box
       px={4}
@@ -33,17 +28,20 @@ function ProjectItem({
       <Flex justifyContent="space-between">
         <Flex>
           <Stack spacing={1} pl={3} align="left">
-            
-            <Link href={url} textDecoration='none' >
-            <HStack cursor='pointer' >
-              <FaGithubAlt />
-              <Heading align="left" color='blue.400' fontWeight='medium' fontStyle='oblique'  fontSize={15}>
-                {title}
-              </Heading> 
-            </HStack>
+            <Link href={url} textDecoration="none">
+              <HStack cursor="pointer">
+                <FaGithubAlt />
+                <Heading
+                  align="left"
+                  color="blue.400"
+                  fontWeight="medium"
+                  fontStyle="oblique"
+                  fontSize={15}
+                >
+                  {title}
+                </Heading>
+              </HStack>
             </Link>
-
-      
 
             {language && (
               <Stack

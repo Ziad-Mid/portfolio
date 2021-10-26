@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { FaMapPin, FaMusic } from "react-icons/fa";
 import { SiRiotgames } from "react-icons/si";
-import {IoDesktopOutline} from "react-icons/io5"
+import { IoDesktopOutline } from "react-icons/io5";
 import Img from "../assets/ziad.png";
 import resume from "../assets/CV_EL_MIDAOUI_ZIAD.pdf";
 import Typist from "react-typist";
@@ -44,7 +44,7 @@ function Home() {
             lineHeight="shorter"
             textAlign={{ base: "inherit", md: "start" }}
           >
-            Hey, I'm {" "}
+            Hey, I'm{" "}
             <Text
               display={"inline"}
               w="full"
@@ -70,13 +70,15 @@ function Home() {
             looking for a graduate internship opportunity.
             <br />
             <br />
-            <Code animation='infinite' fontSize={"xl"} >
-              <Typist >I build things for the web</Typist>
+            <Code animation="infinite" fontSize={"xl"}>
+              <Typist>I build things for the web</Typist>
             </Code>
+            <br />I code <Code colorScheme="blue"> beautifully</Code>{" "}
+            <Code colorScheme="green"> simple</Code> things and I{" "}
+            <Code colorScheme="red"> love </Code> what I do
             <br />
-            I code <Code colorScheme='blue'> beautifully</Code > <Code colorScheme='green'> simple</Code> things and I <Code colorScheme='red'> love </Code>  what I do
-            <br />
-            When I'm not coding I'm still on my computer <Code colorScheme={'orange'}>gaming 🎮</Code>  
+            When I'm not coding I'm still on my computer{" "}
+            <Code colorScheme={"orange"}>gaming 🎮</Code>
           </Text>
         </Box>
         <Box
@@ -185,10 +187,15 @@ function Home() {
                   _focus={{ outline: "none" }}
                 >
                   <Flex direction={"row"} align={"center"}>
-                    <ListIcon w={4} h={4} as={IoDesktopOutline} color="blue.400" />
+                    <ListIcon
+                      w={4}
+                      h={4}
+                      as={IoDesktopOutline}
+                      color="blue.400"
+                    />
 
                     <Flex direction={"column"} ml={2} fontSize={"md"}>
-                     BlindSpot
+                      BlindSpot
                       <Text
                         fontSize={"xs"}
                         color={useColorModeValue("gray.800", "white")}

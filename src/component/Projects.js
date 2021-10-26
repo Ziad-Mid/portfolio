@@ -20,10 +20,12 @@ function Projects() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://api.github.com/users/Ziad-Mid/repos`).then((res) => {
-      setRepos(res.data);
-      setLoading(false);
-    });
+    axios
+      .get(`https://api.github.com/users/Ziad-Mid/repos?sort=created`)
+      .then((res) => {
+        setRepos(res.data);
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -59,16 +61,15 @@ function Projects() {
                   </SimpleGrid>
                 ) : (
                   <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
-                    {repos
-                      .slice(1, 11)
-                      .map((rep, i) => (
-                        <ProjectItem
-                          title={rep.name}
-                          description={rep.description}
-                          language={rep.language}
-                          url={rep.svn_url}
-                        />
-                      ))}
+                    {repos.slice(2, 12).map((rep, i) => (
+                      <ProjectItem
+                        key={i}
+                        title={rep.name}
+                        description={rep.description}
+                        language={rep.language}
+                        url={rep.svn_url}
+                      />
+                    ))}
                   </SimpleGrid>
                 )}{" "}
               </TabPanel>

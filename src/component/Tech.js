@@ -7,22 +7,21 @@ import {
   VStack,
   useColorModeValue,
   Tabs,
-  TabPanels,TabPanel,SimpleGrid
+  TabPanels,
+  TabPanel,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import SkillItem from "./SkillItem";
 import { technologies } from "../Config/Data";
-
-
-
 
 function Tech() {
   return (
     <Box>
       <VStack spacing={3}>
         <VStack>
-          <Heading bgClip="text"
-              bgGradient="linear(to-l, gray.300, blue.300)" >
-          <Link color={useColorModeValue("blue.500", "blue.300")}>S</Link>kills
+          <Heading bgClip="text" bgGradient="linear(to-l, gray.300, blue.300)">
+            <Link color={useColorModeValue("blue.500", "blue.300")}>S</Link>
+            kills
           </Heading>
           <Text
             fontSize={"xl"}
@@ -34,7 +33,6 @@ function Tech() {
           </Text>
         </VStack>
 
-
         <Box w="78%">
           <Tabs
             variant="soft-rounded"
@@ -42,10 +40,7 @@ function Tech() {
             align="center"
             w="100%"
           >
-
             <TabPanels minHeight={"45vh"}>
-
-
               <TabPanel px={0}>
                 <SimpleGrid columns={[1, 2, 3]} spacing={4} mt={8}>
                   {technologies.map((skill, index) => (
@@ -59,8 +54,6 @@ function Tech() {
                   ))}
                 </SimpleGrid>
               </TabPanel>
-
-              
             </TabPanels>
           </Tabs>
         </Box>

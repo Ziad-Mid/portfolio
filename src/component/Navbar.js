@@ -32,7 +32,6 @@ function Navbar() {
 
   return (
     <Box
-      
       borderBottomColor={useColorModeValue("white", "blue.900")}
       boxShadow={"md"}
     >
@@ -69,7 +68,6 @@ function Navbar() {
             ))}
           </HStack>
         </HStack>
-        
 
         <HStack alignItems={"center"}>
           <IconButton
@@ -92,7 +90,7 @@ function Navbar() {
           />
         </HStack>
       </Flex>
-      <Progress size="xs" isIndeterminate  />
+      {/* <Progress size="xs" isIndeterminate  /> */}
       {isOpen ? (
         <Box
           pb={4}
