@@ -2,7 +2,6 @@ import ENSA from "../assets/ENSA.png";
 import INFOSAT from "../assets/INFOSAT.png";
 import {
   SiChakraui,
-  SiCodingame,
   SiFirebase,
   SiJavascript,
   SiMaterialui,
@@ -13,11 +12,6 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaStackOverflow,
-  FaHackerrank,
   FaGitAlt,
   FaJava,
   FaReact,
@@ -53,7 +47,7 @@ export const experiences = [
     alt: "INFOSAT",
     role: "Software Engineer intern",
     description:
-      "As part of my end-of-year project, I did an internship at CROAS, an architect's council under the theme: The development and implementation of a web application for architecture project management, that simplified the process of submitting, verifying, and retrieving requests for new projects.",
+      "As part of my end-of-year project (PFA) , I did an internship at INFOSAT under the theme : The development and implemetation of a web application for shipping management and parcel tracking.",
     skills: [
       "Angular",
       "Spring Boot",
