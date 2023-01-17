@@ -1,21 +1,15 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.0eef7b04.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0eef7b04.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.3449d466.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.3449d466.js.map",
-    "static/js/2.b84b44af.chunk.js": "/portfolio/static/js/2.b84b44af.chunk.js",
-    "static/js/2.b84b44af.chunk.js.map": "/portfolio/static/js/2.b84b44af.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.22d0327c.js",
+    "static/media/ziad.png": "/portfolio/static/media/ziad.d3e476f85130dc1f6197.png",
+    "static/media/CV_EL_MIDAOUI_ZIAD.pdf": "/portfolio/static/media/CV_EL_MIDAOUI_ZIAD.f53c2b0b347bfd3e9ef6.pdf",
+    "static/media/ENSA.png": "/portfolio/static/media/ENSA.84fd3778e9d0895ccc7a.png",
+    "static/media/Oracle.png": "/portfolio/static/media/Oracle.995c90d9931d3d98aeb3.png",
+    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "static/js/2.b84b44af.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b84b44af.chunk.js.LICENSE.txt",
-    "static/media/CV_EL_MIDAOUI_ZIAD.d713a685.pdf": "/portfolio/static/media/CV_EL_MIDAOUI_ZIAD.d713a685.pdf",
-    "static/media/ENSA.84fd3778.png": "/portfolio/static/media/ENSA.84fd3778.png",
-    "static/media/logo.6ce24c58.svg": "/portfolio/static/media/logo.6ce24c58.svg",
-    "static/media/ziad.d3e476f8.png": "/portfolio/static/media/ziad.d3e476f8.png"
+    "main.22d0327c.js.map": "/portfolio/static/js/main.22d0327c.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.3449d466.js",
-    "static/js/2.b84b44af.chunk.js",
-    "static/js/main.0eef7b04.chunk.js"
+    "static/js/main.22d0327c.js"
   ]
 }
