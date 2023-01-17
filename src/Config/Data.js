@@ -1,6 +1,8 @@
 import ENSA from "../assets/ENSA.png";
 import INFOSAT from "../assets/INFOSAT.png";
+import Oracle from "../assets/Oracle.png";
 import {
+  SiAngular,
   SiChakraui,
   SiFirebase,
   SiJavascript,
@@ -43,7 +45,37 @@ export const education = [
 
 export const experiences = [
   {
-    title: "INFOSAT",
+    title: "Oracle",
+    alt: "Oracle",
+    role: "Software Engineer ",
+    description:
+      " ",
+    skills: [
+      "Java 8",
+      "Python3",
+      "Oracle Cloud Infrastructure",
+      "Oracle Linux 8",
+    ],
+    period: "September 2022 – Present",
+    logo: Oracle,
+  },
+  {
+    title: "Oracle",
+    alt: "Oracle",
+    role: "Research Assistant",
+    description:
+      "As part of my end-of-study project (PFE) , I did an internship at Oracle under the theme : Implementation of new features and optimizing the performance of a tool used to scan Oracle owned resources in the Oracle Cloud.",
+    skills: [
+      "Java 8",
+      "Python3",
+      "Oracle Cloud Infrastructure",
+      "Oracle Linux 8",
+    ],
+    period: "March 2022 – August 2022",
+    logo: Oracle,
+  },
+  {
+    title: "Infosat",
     alt: "INFOSAT",
     role: "Software Engineer intern",
     description:
@@ -97,10 +129,10 @@ export const technologies = [
 
   },
   {
-    name: "Material UI",
-    link: "https://mui.com/",
-    icon: <SiMaterialui />,
-    color: "blue.600"
+    name: "Angular",
+    link: "https://angular.io/",
+    icon: <SiAngular />,
+    color: "red.600"
 
   },
   {
@@ -139,7 +171,7 @@ export const technologies = [
 
   },
   {
-    name: "Oracle database",
+    name: "Oracle Cloud Infrastructure",
     link: "https://www.oracle.com/",
     icon: <SiOracle />,
     color: "red.500"

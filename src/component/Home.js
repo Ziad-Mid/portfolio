@@ -97,7 +97,7 @@ function Home() {
             El Midaoui Ziad
           </Heading>
           <Text fontSize={"md"} fontWeight={200} color={"gray.500"} mb={4}>
-            Software Engineer Student
+            Software Engineer @Oracle
           </Text>
 
           <Stack

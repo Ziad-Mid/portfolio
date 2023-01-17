@@ -7,7 +7,7 @@ import {
   FaHackerrank,
 } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import { SiCodingame } from "react-icons/si";
+import { SiCodingame, SiLeetcode } from "react-icons/si";
 
 const social = {
   copyright: `Copyright © ${new Date().getFullYear()} El Midaoui Ziad. All Rights Reserved.`,
@@ -37,6 +37,12 @@ const social = {
         name: "Twitter",
         type: "twitter",
         icon: <FaTwitter />,
+      },
+      {
+        url: "https://leetcode.com/ZiadMid/",
+        name: "LeetCode",
+        type: "orange",
+        icon: <SiLeetcode />,
       },
       {
         url: "https://www.hackerrank.com/elmidaoui_ziad",
