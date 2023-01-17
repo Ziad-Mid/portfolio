@@ -28,7 +28,7 @@ export const education = [
     description:
       "The three years contain theoretical courses to found a strong basis in logical reasoning, that enriches one’s general thinking skills. Most of the courses are supported by practical workshops, and course ending projects, to develop student's skills in real world work.",
     role: "Master degree in Software engineering",
-    period: "2019 – present",
+    period: "2019 – 2022",
     logo: ENSA,
   },
   {
